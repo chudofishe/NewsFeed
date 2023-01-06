@@ -28,6 +28,7 @@ class NewsItemViewHolder(private val binding: NewsFeedItemBinding) : RecyclerVie
         with(binding) {
             Glide.with(image).load(article?.urlToImage).placeholder(ColorDrawable(Color.TRANSPARENT)).into(image)
             title.text = article?.title
+            description.text = article?.description
         }
     }
 }

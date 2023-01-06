@@ -1,17 +1,11 @@
 package com.chudofishe.newsfeed.domain.model
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
 data class Article(
-//    val category: List<String>,
-//    val content: String?,
-//    val country: List<String>,
-//    val description: String,
-//    val imageUrl: String?,
-//    val pubDate: String,
-//    val sourceId: String,
-//    val link: String,
-//    val title: String,
     val title: String,
     val url: String?,
     val description: String?,
@@ -19,4 +13,4 @@ data class Article(
     val urlToImage: String?,
     val publishedAt: String?,
     val content: String?,
-)
+) : Parcelable
